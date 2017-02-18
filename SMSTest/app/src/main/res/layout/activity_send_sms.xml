@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_the_phone_number_of_recipient" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txtPhoneNo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/btnContact"
+            android:inputType="number" />
+
+        <ImageButton
+            android:id="@+id/btnContact"
+            android:layout_width="@dimen/contact_padding"
+            android:layout_height="@dimen/contact_padding"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/contact" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/message" />
+
+    <EditText
+        android:id="@+id/txtMessage"
+        android:layout_width="fill_parent"
+        android:layout_height="150px"
+        android:gravity="top" />
+
+    <Button
+        android:id="@+id/btnSendSMS"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/send_sms" />
+</LinearLayout>
